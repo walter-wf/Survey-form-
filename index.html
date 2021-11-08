@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Survey Form</h1>
+            <p id="description" class="description text-center">
+                Playing a MMORPG - It is Worth it ?
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+            </div>
+            <div class="form-group">
+                <p>Which option best describe your current role?</p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disables delected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="employee">Employee</option>
+                    <option value="gamer">Full time Gamer</option>
+                    <option value="preferNo">Prefer Not To Say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form.group">
+                <p>Would you recommend playing a MMO?</p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="radio-input"
+                        checked />Definitely</label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="radio-input" checked/>Maybe</label>
+
+                <label><input name="user-recommend" value="not-sure" type="radio" class="radio-input"/>Not sure</label>
+            </div>
+
+            <div class="form-group">
+                <p>What is your favorite feature of MMORPG?</p>
+                <select name="mostLike" id="most-like" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="daily quest">Daily Quest</option>
+                    <option value="events">Events</option>
+                    <option value="lore">Lore</option>
+                    <option value="community">Community</option>
+                    <option value="ingamecurreny">In Game Currency</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>What would you like to see improved? <span class="clue">(Check all that apply)</span></p>
+                <label>
+                    <input 
+                    name="prefer"
+                    value="chat communication"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Chat Communication</label>
+                    
+                <label>
+                    <input
+                    name="prefer"
+                    value="gameevents"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Game Events</label
+                    >
+                <label
+                    ><input
+                      name="prefer"
+                      value="guilds"
+                      type="checkbox"
+                      class="input-checkbox"
+                    />Guilds</label
+                  >    
+                <label
+                  ><input
+                    name="prefer"
+                    value="challenges"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Challenges</label
+                >      
+                <label
+                ><input
+                  name="prefer"
+                  value="open-source-community"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Open Source Community</label
+              >
+              <label
+              ><input
+                name="prefer"
+                value="gitter-help-rooms"
+                type="checkbox"
+                class="input-checkbox"
+              />Gitter help rooms</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="videos"
+                type="checkbox"
+                class="input-checkbox"
+              />Videos</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="city-meetups"
+                type="checkbox"
+                class="input-checkbox"
+              />City Meetups</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="wiki"
+                type="checkbox"
+                class="input-checkbox"
+              />Wiki</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="forum"
+                type="checkbox"
+                class="input-checkbox"
+              />Forum</label
+            >   
+            </div>
+
+
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea 
+                name="coment" 
+                id="comments"
+                class="input-textarea" 
+                placeholder="Enter your comment here..." 
+                ></textarea>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit
+
+                </button>
+            </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+
+<!--Build with HTML, CSS and Bootstrap-->
